@@ -1,0 +1,65 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+.title-header::after {
+  position: absolute;
+  height: 1px;
+  width: 10%;
+  bottom: -10px;
+  left: 50%;
+  content: ' ';
+  background-color: #333;
+  transform: translateX(-50%);
+}
+
+* {
+  font-family: 'Rajdhani', sans-serif;
+  outline: none !important;
+}
+
+.fab {
+  display: flex !important;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* ESTILO VEM AQUI */
+
+.fundo {
+  background-image: url('/bghero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.linker {
+  display: flex;
+  position: relative;
+}
+
+.linker:after {
+  bottom: -5px;
+  content: '';
+  height: 2px;
+  right: 0;
+  left: auto;
+  position: absolute;
+  background: currentColor;
+  transition: all 0.7s;
+  width: 0;
+  color: white;
+}
+
+.linker:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
