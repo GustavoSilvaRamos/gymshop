@@ -36,6 +36,12 @@
   background-repeat: no-repeat;
 }
 
+.fundo2 {
+  background-image: url('/bgapres.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .linker {
   display: flex;
   position: relative;
